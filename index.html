@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <html>
 <head>
     <title>나의 첫 페이지</title>
@@ -40,5 +41,91 @@
         <p> 상세 내용 </p>
     </div>
 
+=======
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국기 맞히기 퀴즈</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏳️ 국기 맞히기 퀴즈</h1>
+            <div class="game-info">
+                <div class="game-header">
+                    <span class="score">점수: <span id="score">0</span></span>
+                    <span class="timer">시간: <span id="timer">10</span>초</span>
+                    <span class="question-counter">문제 <span id="current-question">1</span> / 10</span>
+                    <button id="quit-btn" class="quit-btn">나가기</button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- 시작 화면 -->
+            <section id="start-screen" class="screen active">
+                <div class="start-content">
+                    <h2>국기를 보고 나라 이름을 맞혀보세요!</h2>
+                    <p>레벨을 선택하고 도전해보세요!</p>
+                    
+                    <div class="level-selection">
+                        <div class="level-card" data-level="1">
+                            <h3>Level 1</h3>
+                            <p>10문제 - 쉬운 난이도</p>
+                            <span class="level-desc">유명한 나라들</span>
+                        </div>
+                        <div class="level-card" data-level="2">
+                            <h3>Level 2</h3>
+                            <p>15문제 - 보통 난이도</p>
+                            <span class="level-desc">다양한 대륙의 나라들</span>
+                        </div>
+                        <div class="level-card" data-level="3">
+                            <h3>Level 3</h3>
+                            <p>20문제 - 어려운 난이도</p>
+                            <span class="level-desc">모든 나라 포함</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 퀴즈 화면 -->
+            <section id="quiz-screen" class="screen">
+                <div class="quiz-content">
+                    <div class="flag-container">
+                        <img id="flag-image" src="" alt="국기">
+                    </div>
+                    <div class="question-section">
+                        <h3>이 국기는 어느 나라의 국기일까요?</h3>
+                        <div class="options">
+                            <button class="option-btn"></button>
+                            <button class="option-btn"></button>
+                            <button class="option-btn"></button>
+                            <button class="option-btn"></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 결과 화면 -->
+            <section id="result-screen" class="screen">
+                <div class="result-content">
+                    <h2>퀴즈 종료!</h2>
+                    <div class="final-score" id="final-score">0 / 10</div>
+                    <p class="score-message" id="score-message"></p>
+                    <button id="restart-btn" class="btn-primary">다시 시작하기</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2025 국기 퀴즈 게임</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+>>>>>>> Stashed changes
 </body>
 </html>
